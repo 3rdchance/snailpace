@@ -1,3 +1,6 @@
 [submodule "pmdk"]
 	path = pmdk
 	url = git@github.com:pmem/pmdk.git
+[submodule "libpmemobj-cpp"]
+	path = libpmemobj-cpp
+	url = git@github.com:pmem/libpmemobj-cpp.git
