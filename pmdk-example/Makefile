@@ -10,7 +10,7 @@ CXXFLAGS = -I${OBJCPP_ROOT}/include
 all: init bins
 
 .PHONY: bins
-bins: bin/test_pool bin/test_pool_cpp
+bins: bin/test_pool bin/test_pool_cpp bin/test_alloc
 
 init:
 	git submodule init
@@ -22,6 +22,10 @@ bin/test_pool: pool/pool.c ${PMDK_ROOT}/lib/lib/libpmemobj.a ${PMDK_ROOT}/lib/li
 	mkdir  -p $(dir $@)
 	$(CC) $(CFLAGS) $(LDLIBS) -o $@ $^
 
+
+bin/test_alloc: pool/alloc.c ${PMDK_ROOT}/lib/lib/libpmemobj.a ${PMDK_ROOT}/lib/lib/libpmem2.a ${PMDK_ROOT}/lib/lib/libpmem.a
+	mkdir  -p $(dir $@)
+	$(CC) $(CFLAGS) $(LDLIBS) -o $@ $^
 
 bin/test_pool_cpp: pool/pool.cpp ${PMDK_ROOT}/lib/lib/libpmemobj.a ${PMDK_ROOT}/lib/lib/libpmem2.a ${PMDK_ROOT}/lib/lib/libpmem.a
 	mkdir  -p $(dir $@)

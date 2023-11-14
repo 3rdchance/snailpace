@@ -32,7 +32,7 @@ int main(int argc, char** argv)
 		root = pmemobj_direct(pmemobj_root(pop, sizeof(*root)));
 		strcpy(root->msg, "helloworld");
 		root->cnt = 0;
-		pmemobj_persist(pop, root, sizeof(root));
+		//pmemobj_persist(pop, root, sizeof(root));
 		printf("\033[1;32mfirst open pool success\033[0m\n");
 	
 	} else {
@@ -40,7 +40,7 @@ int main(int argc, char** argv)
 		root = pmemobj_direct(pmemobj_root(pop, sizeof(*root)));
 		root->cnt++;
 		printf("\033[1;32mopen pool %d times\033[0m\n", root->cnt);
-		pmemobj_persist(pop, root, sizeof(root));
+	//	pmemobj_persist(pop, root, sizeof(root));
 	}
 
 	pmemobj_close(pop);
