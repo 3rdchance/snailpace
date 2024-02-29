@@ -4,3 +4,6 @@
 [submodule "libpmemobj-cpp"]
 	path = libpmemobj-cpp
 	url = git@github.com:pmem/libpmemobj-cpp.git
+[submodule "depends/valgrind"]
+	path = depends/valgrind
+	url = https://github.com/pmem/valgrind.git
