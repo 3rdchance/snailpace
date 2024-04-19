@@ -7,3 +7,6 @@
 [submodule "depends/valgrind"]
 	path = depends/valgrind
 	url = https://github.com/pmem/valgrind.git
+[submodule "submodules/valgrind"]
+	path = submodules/valgrind
+	url = https://github.com/pmem/valgrind.git
