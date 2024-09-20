@@ -1,3 +1,4 @@
 # ignore debug and release directory
 debug/
 release/
+bin/

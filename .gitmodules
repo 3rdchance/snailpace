@@ -1,3 +1,9 @@
-[submodule "pmdk"]
-	path = pmdk
+[submodule "submodules/libpmemobj-cpp"]
+	path = submodules/libpmemobj-cpp
+	url = git@github.com:pmem/libpmemobj-cpp.git
+[submodule "submodules/pmdk"]
+	path = submodules/pmdk
 	url = git@github.com:pmem/pmdk.git
+[submodule "submodules/valgrind"]
+	path = submodules/valgrind
+	url = https://github.com/pmem/valgrind.git
