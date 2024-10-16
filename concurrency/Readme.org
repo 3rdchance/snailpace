@@ -1,0 +1,12 @@
+1. how write  ipv4 && ipv6 independent code in c
+
+2. how set specific ip address to endpoint
+tcp::endpoint(ip::v4(), 13)
+
+3. tcp sync socket.readsome vs asio::readsome
+asio::async_write
+
+
+- ideas
+
+merge 2 column family - for range merge

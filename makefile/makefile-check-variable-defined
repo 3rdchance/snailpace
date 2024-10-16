@@ -1,0 +1,12 @@
+# ifdef does not expand variable references; it just sees if something is defined at all
+# so in this example foo is defined, bar is not defined
+bar =
+foo = $(bar)
+
+all:
+ifdef foo
+	echo "foo is defined"
+endif
+ifndef bar
+	echo "but bar is not"
+endif
