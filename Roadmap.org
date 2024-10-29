@@ -1,7 +1,38 @@
-* Developement Env
-* Hello Word
-* Command line
-* Data Types
-* Concurrency
-* Network
-* System
+
+
+1. how write  ipv4 && ipv6 independent code in c
+
+2. how set specific ip address to endpoint
+tcp::endpoint(ip::v4(), 13)
+
+3. tcp sync socket.readsome vs asio::readsome
+asio::async_write
+
+
+
+I want fly, run, but failed. so slowly do onething after one thing.
+
+# C++ idiom
+
+
+# Makefile
+string substitution
+       $(var:pattern=replacement)
+       $(patsubst pattern,replacement,$(var))
+
+functions
+      $(addprefix <prefix>, <name1 name2 ...>)
+
+TODO1 include sub directory Makefile
+TODO2 c header file dependency
+
+
+
+
+
+
+
+
+
+
+
