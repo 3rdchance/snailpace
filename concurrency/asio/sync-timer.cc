@@ -9,7 +9,7 @@ int main()
 
 	t.wait();
 	
-	std::cout << "timer expire fter 5 seconds\n";
+	std::cout << "\033[31mtimer expire fter 5 seconds\033[0m\n";
 
 	return 0;
 }

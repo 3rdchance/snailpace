@@ -1,21 +1,21 @@
-
-
-1. how write  ipv4 && ipv6 independent code in c
-
+* network programming
+** asio
+*** asio timer
+1. color output
+2. simple Makefile and CMake   
+*** asio network
 2. how set specific ip address to endpoint
 tcp::endpoint(ip::v4(), 13)
 
 3. tcp sync socket.readsome vs asio::readsome
 asio::async_write
 
+** redis ae pool
+*** ae-lib usage
+** roadmaps
+1. how write  ipv4 && ipv6 independent code in c
 
-
-I want fly, run, but failed. so slowly do onething after one thing.
-
-# C++ idiom
-
-
-# Makefile
+* Makefile && CMake
 string substitution
        $(var:pattern=replacement)
        $(patsubst pattern,replacement,$(var))
@@ -29,7 +29,8 @@ TODO2 c header file dependency
 
 
 
-
+* C++ idiom
+** double check
 
 
 
